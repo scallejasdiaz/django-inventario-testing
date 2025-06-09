@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Productos</title>
+</head>
+<body>
+    <h1>Productos en Inventario</h1>
+
+    <ul>
+        {% for item in productos %}  
+            <li>
+                <a href="{% url 'detalle' slug=item.slug %}">
+                    {{ item.nombre }} - {{ item.categoria }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'agregar' %}">Agregar nuevo producto</a>
+</body>
+</html>

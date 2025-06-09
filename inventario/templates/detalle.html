@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle de Producto</title>
+</head>
+<body>
+    <h1>{{ object.nombre }}</h1>
+    <p>Categoría: {{ object.categoria }}</p>
+
+    <a href="{% url 'eliminar' slug=object.slug %}">Eliminar producto</a>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eliminar Producto</title>
+</head>
+<body>
+    <h1>¿Estás seguro que deseas eliminar este producto?</h1>
+
+    <p>Producto: {{ producto.nombre }}</p> 
+
+    <form method="post">
+        <button type="submit">Eliminar</button>
+        <a href="{% url 'listado' %}">Cancelar</a>
+    </form>
+</body>
+</html>
