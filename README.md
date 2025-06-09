@@ -17,7 +17,7 @@ El objetivo es que el estudiante:
 - Python 3.10+
 - Django 4.2+
 - pipenv o virtualenv
-- pytest (instalado como dependencia)
+- pytest y herramientas adicionales (ver más abajo)
 - Navegador web
 
 ---
@@ -57,6 +57,19 @@ pytest
 # o también
 python manage.py test
 ```
+
+---
+
+## 🔬 Herramientas de Testing Incluidas
+
+| Herramienta      | Descripción                                            |
+|------------------|--------------------------------------------------------|
+| `pytest`         | Motor de pruebas liviano y eficiente                   |
+| `pytest-django`  | Integración con proyectos Django                       |
+| `coverage`       | Medición de cobertura de código                        |
+| `pytest-cov`     | Cobertura directamente integrada con `pytest`         |
+| `factory_boy`    | Generador de datos de prueba con objetos de fábrica   |
+| `Faker`          | Generador de datos falsos (nombres, emails, etc.)     |
 
 ---
 
@@ -102,4 +115,3 @@ Puedes apoyarte en los siguientes materiales:
 ## 🛡️ Nota para estudiantes
 
 Este ejercicio no solo busca encontrar errores, sino también fomentar una actitud de mejora continua, análisis crítico y buenas prácticas de desarrollo en línea con un plan de certificación de calidad.
-
