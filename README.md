@@ -115,3 +115,29 @@ Puedes apoyarte en los siguientes materiales:
 ## 🛡️ Nota para estudiantes
 
 Este ejercicio no solo busca encontrar errores, sino también fomentar una actitud de mejora continua, análisis crítico y buenas prácticas de desarrollo en línea con un plan de certificación de calidad.
+
+---
+
+### 📈 Cobertura de Pruebas (opcional)
+
+Este repositorio incluye configuración para medir la cobertura de las pruebas automáticas mediante `coverage`.
+
+#### ✅ Archivos incluidos
+
+- `.coveragerc`: Define exclusiones para el análisis de cobertura (como migraciones y archivos del entorno).
+- `pytest.ini`: Configura Pytest para usar Django y facilitar la ejecución de pruebas.
+
+#### ▶️ Ejecutar cobertura
+
+```bash
+coverage run -m pytest
+coverage report
+```
+
+#### 🧾 Reporte en HTML (opcional)
+
+```bash
+coverage html
+# Abre en navegador:
+open htmlcov/index.html
+```
